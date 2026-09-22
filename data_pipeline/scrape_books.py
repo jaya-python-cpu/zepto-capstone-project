@@ -23,4 +23,8 @@ book.select_one(".price_color").
 book.select_one(".star-rating")
 ["class"][1]
   print(rating)
+availability=
+book.select_one(".availability")
+.text.strip()
+print(availability)
 
