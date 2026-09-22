@@ -1,6 +1,9 @@
 import requests
 from bs4 import beautifulsoup
+import pandas as pd
+
 books_data=[]
+
 url= "https://books.toscrape.com/"
 response=requests.get(url)
 response.raise_for_satus()
@@ -13,9 +16,10 @@ books= soup.select("article.product_pod")
 print(len(books))
 
 for book in books:
-  title=book.h3.a["title"]
-  print(title)
-  price=
+   title=book.h3.a["title"]
+   print(title)
+  
+   price=
 book.select_one(".price_color").
   text
   print(price)
@@ -28,4 +32,6 @@ book.select_one(".availability")
 .text.strip()
 print(availability)
 books_data.append({"title": title,"price": price, "rating": rating,"availability": availability})
+df=pd.DataFrame(books_data)
+  print(df.head())
 
