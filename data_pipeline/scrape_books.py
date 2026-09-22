@@ -11,3 +11,7 @@ print(soup.find(ol))
 
 books= soup.select("article.product_pod")
 print(len(books))
+
+for book in books:
+  title=book.h3.a["title"]
+  print(title)
