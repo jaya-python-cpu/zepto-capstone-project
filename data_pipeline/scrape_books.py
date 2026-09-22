@@ -1,6 +1,6 @@
 import requests
 from bs4 import beautifulsoup
-
+books_data=[]
 url= "https://books.toscrape.com/"
 response=requests.get(url)
 response.raise_for_satus()
@@ -27,4 +27,5 @@ availability=
 book.select_one(".availability")
 .text.strip()
 print(availability)
+books_data.append({"title": title,"price": price, "rating": rating,"availability": availability})
 
