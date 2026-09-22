@@ -19,4 +19,8 @@ for book in books:
 book.select_one(".price_color").
   text
   print(price)
+  rating=
+book.select_one(".star-rating")
+["class"][1]
+  print(rating)
 
