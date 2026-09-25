@@ -2,7 +2,7 @@
 this module contain the zepto-capstone data pipeline
 
 #work included 
--scrapping book data using 
+-scrapping book data using             
 requests and beautifulsoup
 - cleaning and converting the scraped data
 - converting GBP prices to INR using the required fixed rate
