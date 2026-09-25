@@ -9,6 +9,20 @@ requests and beautifulsoup
 - storing the cleaned data in a normalized SGLite database
 - running SQL queries on the database
 - comparing SQL results with pandas dataframes
+- 
+- Workflow:
+  
+Web Scraping
+     ↓
+Data Cleaning
+     ↓
+GBP → INR Conversion
+     ↓
+SQLite Database
+     ↓
+SQL Queries
+     ↓
+Pandas Validation
 - ## Data source
 - books.tosrape.com
 ##Currency conversion
