@@ -13,4 +13,27 @@ requests and beautifulsoup
 - books.tosrape.com
 ##Currency conversion
 1 GBP = 105.50 INR
-  
+  Database Schema
+categories
+-----------
+category_id (PK)
+category_name
+
+books
+-----------
+book_id (PK)
+title
+price_gbp
+price_inr
+rating
+in_stock
+category_id (FK)
+Run
+pip install -r requirements.txt
+python scrape_and_load.py
+python queries.py
+Files
+scrape_and_load.py – Scraping, cleaning and database creation
+queries.py – SQL queries and Pandas validation
+zepto_books.db – SQLite database
+requirements.txt – Python dependencies
